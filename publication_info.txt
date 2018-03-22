@@ -1,0 +1,7 @@
+authors="Carlos de Lannoy"
+organism="Escherichia coli"
+basecaller="Albacore 2.0.2"
+kit="SQK-LSK108"
+flowcell="FLO-MIN105"
+repository_name=git@github.com:lanno001/test_repo_20180314.git
+fork_address=git@github.com:lanno001/assembler_benchmark_new_submissions

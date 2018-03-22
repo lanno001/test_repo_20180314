@@ -1,0 +1,396 @@
+[2018-03-22_11:44:16]: PUSH TO GITHUB REPOSITORY
+[master 8da8dcf] Automatic benchmark results commit
+ 8 files changed, 244 insertions(+), 99 deletions(-)
+ create mode 100644 assembler_logfiles/log_files/minimap2_miniasm.log
+ create mode 100644 assembler_logfiles/log_files/minimap_miniasm.log
+ copy std_logs/{git.log => .nfs0000000006413aab003fb648} (100%)
+ rewrite std_logs/git.log (97%)
+Already up-to-date.
+Branch master set up to track remote branch master from origin.
+[2018-03-22_11:44:27]: PULL REQUEST TO SHARED BENCHMARK
+[master a40ac7e] Commit assembler benchmark results
+ 57 files changed, 16110 insertions(+)
+ create mode 100644 E_coli_114427163203455/README.md
+ create mode 100644 E_coli_114427163203455/REPORT.html
+ create mode 100644 E_coli_114427163203455/analysis_tool_versions.yaml
+ create mode 100644 E_coli_114427163203455/assembler_logfiles/log_files/minimap2_miniasm.log
+ create mode 100644 E_coli_114427163203455/assembler_logfiles/log_files/minimap_miniasm.log
+ create mode 100644 E_coli_114427163203455/assembler_logfiles/minimap2_miniasm.log
+ create mode 100644 E_coli_114427163203455/assembler_logfiles/minimap_miniasm.log
+ create mode 100644 E_coli_114427163203455/assembler_scripts/minimap2_miniasm.sh
+ create mode 100644 E_coli_114427163203455/assembler_scripts/minimap_miniasm.sh
+ create mode 100644 E_coli_114427163203455/efficiency/CPU_times.yaml
+ create mode 100644 E_coli_114427163203455/extended_parameters.config
+ create mode 100644 E_coli_114427163203455/kmer_abundance/count_files/ecoli_k12_mg1655.count
+ create mode 100644 E_coli_114427163203455/kmer_abundance/count_files/minimap2_miniasm.count
+ create mode 100644 E_coli_114427163203455/kmer_abundance/count_files/minimap_miniasm.count
+ create mode 100644 E_coli_114427163203455/kmer_abundance/jf_files/ecoli_k12_mg1655.jf
+ create mode 100644 E_coli_114427163203455/kmer_abundance/jf_files/minimap2_miniasm.jf
+ create mode 100644 E_coli_114427163203455/kmer_abundance/jf_files/minimap_miniasm.jf
+ create mode 100644 E_coli_114427163203455/publication_info.txt
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.all_snps.gz
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.coords
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.coords.filtered
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.filter
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.fplot
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.gp
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.html
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.rplot
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.sf
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.unaligned
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap2_miniasm.used_snps.gz
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.all_snps.gz
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.coords
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.coords.filtered
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.filter
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.fplot
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.gp
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.html
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.rplot
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.sf
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.unaligned
+ create mode 100644 E_coli_114427163203455/quast/nucmer_output/minimap_miniasm.used_snps.gz
+ create mode 100644 E_coli_114427163203455/quast/report.tsv
+ create mode 100644 E_coli_114427163203455/readset_analysis/HistogramReadlength.png
+ create mode 100644 E_coli_114427163203455/readset_analysis/LengthvsQualityScatterPlot_dot.png
+ create mode 100644 E_coli_114427163203455/readset_analysis/LengthvsQualityScatterPlot_kde.png
+ create mode 100644 E_coli_114427163203455/readset_analysis/LogTransformed_HistogramReadlength.png
+ create mode 100644 E_coli_114427163203455/readset_analysis/NanoPlot-report.html
+ create mode 100644 E_coli_114427163203455/readset_analysis/NanoPlot_20180321_1117.log
+ create mode 100644 E_coli_114427163203455/readset_analysis/NanoPlot_20180321_1415.log
+ create mode 100644 E_coli_114427163203455/readset_analysis/NanoStats.txt
+ create mode 100644 E_coli_114427163203455/readset_analysis/Weighted_HistogramReadlength.png
+ create mode 100644 E_coli_114427163203455/readset_analysis/Weighted_LogTransformed_HistogramReadlength.png
+ create mode 100644 E_coli_114427163203455/readset_analysis/alignment_stats.yaml
+ create mode 100644 E_coli_114427163203455/readset_analysis/all_reads_alignment.paf
+ create mode 100644 E_coli_114427163203455/std_logs/.nfs0000000006413aab003fb648
+ create mode 100644 E_coli_114427163203455/std_logs/git.log
+ create mode 100644 E_coli_114427163203455/std_logs/multiqc.log
+ create mode 100644 E_coli_114427163203455/std_logs/quast.log
+To git@github.com:lanno001/assembler_benchmark_new_submissions
+   a24e12f..a40ac7e  master -> master
+{
+  "url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/pulls/1",
+  "id": 176738399,
+  "html_url": "https://github.com/cvdelannoy/assembler_benchmark_new_submissions/pull/1",
+  "diff_url": "https://github.com/cvdelannoy/assembler_benchmark_new_submissions/pull/1.diff",
+  "patch_url": "https://github.com/cvdelannoy/assembler_benchmark_new_submissions/pull/1.patch",
+  "issue_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/issues/1",
+  "number": 1,
+  "state": "open",
+  "locked": false,
+  "title": "assembler_benchmark_new_submissions",
+  "user": {
+    "login": "lanno001",
+    "id": 36664568,
+    "avatar_url": "https://avatars3.githubusercontent.com/u/36664568?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lanno001",
+    "html_url": "https://github.com/lanno001",
+    "followers_url": "https://api.github.com/users/lanno001/followers",
+    "following_url": "https://api.github.com/users/lanno001/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lanno001/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lanno001/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lanno001/subscriptions",
+    "organizations_url": "https://api.github.com/users/lanno001/orgs",
+    "repos_url": "https://api.github.com/users/lanno001/repos",
+    "events_url": "https://api.github.com/users/lanno001/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lanno001/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "body": null,
+  "created_at": "2018-03-22T10:44:57Z",
+  "updated_at": "2018-03-22T10:44:57Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "requested_reviewers": [
+
+  ],
+  "requested_teams": [
+
+  ],
+  "labels": [
+
+  ],
+  "milestone": null,
+  "commits_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/pulls/1/commits",
+  "review_comments_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/pulls/1/comments",
+  "review_comment_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/issues/1/comments",
+  "statuses_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/statuses/a40ac7e0475fa1edcb54c7da79c42c421cb58398",
+  "head": {
+    "label": "lanno001:master",
+    "ref": "master",
+    "sha": "a40ac7e0475fa1edcb54c7da79c42c421cb58398",
+    "user": {
+      "login": "lanno001",
+      "id": 36664568,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/36664568?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lanno001",
+      "html_url": "https://github.com/lanno001",
+      "followers_url": "https://api.github.com/users/lanno001/followers",
+      "following_url": "https://api.github.com/users/lanno001/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lanno001/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lanno001/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lanno001/subscriptions",
+      "organizations_url": "https://api.github.com/users/lanno001/orgs",
+      "repos_url": "https://api.github.com/users/lanno001/repos",
+      "events_url": "https://api.github.com/users/lanno001/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lanno001/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "repo": {
+      "id": 126320363,
+      "name": "assembler_benchmark_new_submissions",
+      "full_name": "lanno001/assembler_benchmark_new_submissions",
+      "owner": {
+        "login": "lanno001",
+        "id": 36664568,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/36664568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lanno001",
+        "html_url": "https://github.com/lanno001",
+        "followers_url": "https://api.github.com/users/lanno001/followers",
+        "following_url": "https://api.github.com/users/lanno001/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lanno001/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lanno001/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lanno001/subscriptions",
+        "organizations_url": "https://api.github.com/users/lanno001/orgs",
+        "repos_url": "https://api.github.com/users/lanno001/repos",
+        "events_url": "https://api.github.com/users/lanno001/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lanno001/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "private": false,
+      "html_url": "https://github.com/lanno001/assembler_benchmark_new_submissions",
+      "description": "A mostly empty repository that collects submissions to a collective benchmarking effort as pull requests",
+      "fork": true,
+      "url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions",
+      "forks_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/forks",
+      "keys_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/teams",
+      "hooks_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/hooks",
+      "issue_events_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/events",
+      "assignees_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/tags",
+      "blobs_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/languages",
+      "stargazers_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/stargazers",
+      "contributors_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/contributors",
+      "subscribers_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/subscribers",
+      "subscription_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/subscription",
+      "commits_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/merges",
+      "archive_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/downloads",
+      "issues_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/labels{/name}",
+      "releases_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/lanno001/assembler_benchmark_new_submissions/deployments",
+      "created_at": "2018-03-22T10:43:58Z",
+      "updated_at": "2018-03-22T10:44:40Z",
+      "pushed_at": "2018-03-22T10:44:38Z",
+      "git_url": "git://github.com/lanno001/assembler_benchmark_new_submissions.git",
+      "ssh_url": "git@github.com:lanno001/assembler_benchmark_new_submissions.git",
+      "clone_url": "https://github.com/lanno001/assembler_benchmark_new_submissions.git",
+      "svn_url": "https://github.com/lanno001/assembler_benchmark_new_submissions",
+      "homepage": null,
+      "size": 0,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "HTML",
+      "has_issues": false,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "open_issues_count": 0,
+      "license": null,
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "master"
+    }
+  },
+  "base": {
+    "label": "cvdelannoy:master",
+    "ref": "master",
+    "sha": "75d495744e29235c2d90bcd789dfaad3751671d1",
+    "user": {
+      "login": "cvdelannoy",
+      "id": 21309905,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/21309905?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cvdelannoy",
+      "html_url": "https://github.com/cvdelannoy",
+      "followers_url": "https://api.github.com/users/cvdelannoy/followers",
+      "following_url": "https://api.github.com/users/cvdelannoy/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cvdelannoy/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cvdelannoy/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cvdelannoy/subscriptions",
+      "organizations_url": "https://api.github.com/users/cvdelannoy/orgs",
+      "repos_url": "https://api.github.com/users/cvdelannoy/repos",
+      "events_url": "https://api.github.com/users/cvdelannoy/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cvdelannoy/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "repo": {
+      "id": 126318794,
+      "name": "assembler_benchmark_new_submissions",
+      "full_name": "cvdelannoy/assembler_benchmark_new_submissions",
+      "owner": {
+        "login": "cvdelannoy",
+        "id": 21309905,
+        "avatar_url": "https://avatars0.githubusercontent.com/u/21309905?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cvdelannoy",
+        "html_url": "https://github.com/cvdelannoy",
+        "followers_url": "https://api.github.com/users/cvdelannoy/followers",
+        "following_url": "https://api.github.com/users/cvdelannoy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cvdelannoy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cvdelannoy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cvdelannoy/subscriptions",
+        "organizations_url": "https://api.github.com/users/cvdelannoy/orgs",
+        "repos_url": "https://api.github.com/users/cvdelannoy/repos",
+        "events_url": "https://api.github.com/users/cvdelannoy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cvdelannoy/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "private": false,
+      "html_url": "https://github.com/cvdelannoy/assembler_benchmark_new_submissions",
+      "description": "A mostly empty repository that collects submissions to a collective benchmarking effort as pull requests",
+      "fork": false,
+      "url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions",
+      "forks_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/forks",
+      "keys_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/teams",
+      "hooks_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/hooks",
+      "issue_events_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/events",
+      "assignees_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/tags",
+      "blobs_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/languages",
+      "stargazers_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/stargazers",
+      "contributors_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/contributors",
+      "subscribers_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/subscribers",
+      "subscription_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/subscription",
+      "commits_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/merges",
+      "archive_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/downloads",
+      "issues_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/deployments",
+      "created_at": "2018-03-22T10:30:37Z",
+      "updated_at": "2018-03-22T10:30:53Z",
+      "pushed_at": "2018-03-22T10:30:52Z",
+      "git_url": "git://github.com/cvdelannoy/assembler_benchmark_new_submissions.git",
+      "ssh_url": "git@github.com:cvdelannoy/assembler_benchmark_new_submissions.git",
+      "clone_url": "https://github.com/cvdelannoy/assembler_benchmark_new_submissions.git",
+      "svn_url": "https://github.com/cvdelannoy/assembler_benchmark_new_submissions",
+      "homepage": null,
+      "size": 0,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": null,
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": false,
+      "forks_count": 1,
+      "mirror_url": null,
+      "archived": false,
+      "open_issues_count": 1,
+      "license": null,
+      "forks": 1,
+      "open_issues": 1,
+      "watchers": 0,
+      "default_branch": "master"
+    }
+  },
+  "_links": {
+    "self": {
+      "href": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/pulls/1"
+    },
+    "html": {
+      "href": "https://github.com/cvdelannoy/assembler_benchmark_new_submissions/pull/1"
+    },
+    "issue": {
+      "href": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/issues/1"
+    },
+    "comments": {
+      "href": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/issues/1/comments"
+    },
+    "review_comments": {
+      "href": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/pulls/1/comments"
+    },
+    "review_comment": {
+      "href": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/pulls/comments{/number}"
+    },
+    "commits": {
+      "href": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/pulls/1/commits"
+    },
+    "statuses": {
+      "href": "https://api.github.com/repos/cvdelannoy/assembler_benchmark_new_submissions/statuses/a40ac7e0475fa1edcb54c7da79c42c421cb58398"
+    }
+  },
+  "author_association": "NONE",
+  "merged": false,
+  "mergeable": null,
+  "rebaseable": null,
+  "mergeable_state": "unknown",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 0,
+  "maintainer_can_modify": true,
+  "commits": 3,
+  "additions": 16110,
+  "deletions": 0,
+  "changed_files": 57
+}
