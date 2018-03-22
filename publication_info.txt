@@ -1,6 +1,6 @@
-authors="sadf"
-organism="asdf"
-basecaller="sadf"
+authors="Carlos"
+organism="E. coli"
+basecaller="Albacore 2.0.2"
 kit="SQK-LSK108"
 flowcell="FLO-MIN105"
 repository_name=git@github.com:lanno001/test_repo_20180314.git
