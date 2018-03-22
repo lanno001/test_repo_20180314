@@ -1,0 +1,17 @@
+[INFO   ]         multiqc : This is MultiQC v1.5.dev0 (addad5e)
+[INFO   ]         multiqc : Template    : assembler_benchmark
+[INFO   ]         multiqc : Report title: Assembler Benchmark report
+[INFO   ]         multiqc : Searching '/mnt/nexenta/lanno001/nobackup/int_ab_20180321/summarized_results'
+[INFO   ]         multiqc : Only using modules with 'assembler_benchmark' tag
+Searching 105 files..
+[INFO   ] ab_read_quality : found Minimap2 alignment summary
+[INFO   ] ab_read_quality : found nanostats file
+[INFO   ]           quast : Found 2 reports
+[INFO   ]       jellyfish : Found 0 histogram files
+[INFO   ]       jellyfish : Found 3 count (dump) files
+[INFO   ]      mummerplot : found mummerplot images
+[INFO   ]    ab_cpu_times : found 2 CPU time entries
+[INFO   ]         multiqc : Compressing plot data
+[INFO   ]         multiqc : Report      : summarized_results/multiqc_report/README.html
+[INFO   ]         multiqc : Data        : None
+[INFO   ]         multiqc : MultiQC complete

@@ -1,0 +1,46 @@
+START AUTO VERSION PRINTING
+# minimap
+# miniasm
+0.2-r124-dirty
+0.2-r168-dirty
+END AUTO VERSION PRINTING
+:3.006*1.62] loaded/built the index for 1000 target sequence(s)
+[M::main] max occurrences of a minimizer to consider: 10
+[M::main] Version: 0.2-r124-dirty
+[M::main] CMD: /home/lanno001/assemblerBenchmark/lib/minimap/minimap -x ava10k -t 16 /mnt/nexenta/lanno001/nobackup/int_ab_20180321/all_reads.fastq /mnt/nexenta/lanno001/nobackup/int_ab_20180321/all_reads.fastq
+[M::main] Real time: 4.124 sec; CPU: 11.512 sec
+[M::main] ===> Step 1: reading read mappings <===
+[M::ma_hit_read::0.041*0.96] read 10772 hits; stored 17513 hits and 902 sequences (34546619 bp)
+[M::main] ===> Step 2: 1-pass (crude) read selection <===
+[M::ma_hit_sub::0.046*0.96] 877 query sequences remain after sub
+[M::ma_hit_cut::0.047*0.94] 13302 hits remain after cut
+[M::ma_hit_flt::0.048*0.92] 11119 hits remain after filtering; crude coverage after filtering: 9.67
+[M::main] ===> Step 3: 2-pass (fine) read selection <===
+[M::ma_hit_sub::0.050*0.97] 850 query sequences remain after sub
+[M::ma_hit_cut::0.050*0.95] 10699 hits remain after cut
+[M::ma_hit_contained::0.051*0.94] 109 sequences and 310 hits remain after containment removal
+[M::main] ===> Step 4: graph cleaning <===
+[M::ma_sg_gen] read 310 arcs
+[M::main] ===> Step 4.1: transitive reduction <===
+[M::asg_arc_del_trans] transitively reduced 154 arcs
+[M::asg_arc_del_multi] removed 0 multi-arcs
+[M::asg_arc_del_asymm] removed 4 asymmetric arcs
+[M::main] ===> Step 4.2: initial tip cutting and bubble popping <===
+[M::asg_cut_tip] cut 24 tips
+[M::asg_pop_bubble] popped 0 bubbles and trimmed 0 tips
+[M::main] ===> Step 4.3: cutting short overlaps (3 rounds in total) <===
+[M::asg_arc_del_short] removed 0 short overlaps
+[M::asg_arc_del_short] removed 0 short overlaps
+[M::asg_arc_del_short] removed 0 short overlaps
+[M::main] ===> Step 4.4: removing short internal sequences and bi-loops <===
+[M::asg_cut_internal] cut 0 internal sequences
+[M::asg_cut_biloop] cut 0 small bi-loops
+[M::asg_cut_tip] cut 0 tips
+[M::asg_pop_bubble] popped 0 bubbles and trimmed 0 tips
+[M::main] ===> Step 4.5: aggressively cutting short overlaps <===
+[M::asg_arc_del_short] removed 0 short overlaps
+[M::main] ===> Step 5: generating unitigs <===
+[M::main] Version: 0.2-r168-dirty
+[M::main] CMD: miniasm -f /mnt/nexenta/lanno001/nobackup/int_ab_20180321/all_reads.fastq /mnt/nexenta/lanno001/nobackup/int_ab_20180321/assembler_results/minimap_miniasm/minimap.paf.gz
+[M::main] Real time: 0.206 sec; CPU: 0.180 sec
+CPU_TIME(USER+SYS):9+2
