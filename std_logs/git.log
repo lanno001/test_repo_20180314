@@ -1,0 +1,81 @@
+[2018-03-22_11:50:44]: PUSH TO GITHUB REPOSITORY
+[master 0479066] Automatic benchmark results commit
+ 6 files changed, 423 insertions(+), 146 deletions(-)
+ copy std_logs/{git.log => .nfs0000000006414f41003fb64b} (100%)
+ rewrite std_logs/git.log (97%)
+Already up-to-date.
+Branch master set up to track remote branch master from origin.
+[2018-03-22_11:50:49]: PULL REQUEST TO SHARED BENCHMARK
+[master b0efcd8] Commit assembler benchmark results
+ 58 files changed, 16506 insertions(+)
+ create mode 100644 Escherichia_coli_115049956982737/README.md
+ create mode 100644 Escherichia_coli_115049956982737/REPORT.html
+ create mode 100644 Escherichia_coli_115049956982737/analysis_tool_versions.yaml
+ create mode 100644 Escherichia_coli_115049956982737/assembler_logfiles/log_files/minimap2_miniasm.log
+ create mode 100644 Escherichia_coli_115049956982737/assembler_logfiles/log_files/minimap_miniasm.log
+ create mode 100644 Escherichia_coli_115049956982737/assembler_logfiles/minimap2_miniasm.log
+ create mode 100644 Escherichia_coli_115049956982737/assembler_logfiles/minimap_miniasm.log
+ create mode 100644 Escherichia_coli_115049956982737/assembler_scripts/minimap2_miniasm.sh
+ create mode 100644 Escherichia_coli_115049956982737/assembler_scripts/minimap_miniasm.sh
+ create mode 100644 Escherichia_coli_115049956982737/efficiency/CPU_times.yaml
+ create mode 100644 Escherichia_coli_115049956982737/extended_parameters.config
+ create mode 100644 Escherichia_coli_115049956982737/kmer_abundance/count_files/ecoli_k12_mg1655.count
+ create mode 100644 Escherichia_coli_115049956982737/kmer_abundance/count_files/minimap2_miniasm.count
+ create mode 100644 Escherichia_coli_115049956982737/kmer_abundance/count_files/minimap_miniasm.count
+ create mode 100644 Escherichia_coli_115049956982737/kmer_abundance/jf_files/ecoli_k12_mg1655.jf
+ create mode 100644 Escherichia_coli_115049956982737/kmer_abundance/jf_files/minimap2_miniasm.jf
+ create mode 100644 Escherichia_coli_115049956982737/kmer_abundance/jf_files/minimap_miniasm.jf
+ create mode 100644 Escherichia_coli_115049956982737/publication_info.txt
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.all_snps.gz
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.coords
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.coords.filtered
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.filter
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.fplot
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.gp
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.html
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.rplot
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.sf
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.unaligned
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap2_miniasm.used_snps.gz
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.all_snps.gz
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.coords
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.coords.filtered
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.filter
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.fplot
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.gp
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.html
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.rplot
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.sf
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.unaligned
+ create mode 100644 Escherichia_coli_115049956982737/quast/nucmer_output/minimap_miniasm.used_snps.gz
+ create mode 100644 Escherichia_coli_115049956982737/quast/report.tsv
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/HistogramReadlength.png
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/LengthvsQualityScatterPlot_dot.png
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/LengthvsQualityScatterPlot_kde.png
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/LogTransformed_HistogramReadlength.png
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/NanoPlot-report.html
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/NanoPlot_20180321_1117.log
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/NanoPlot_20180321_1415.log
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/NanoStats.txt
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/Weighted_HistogramReadlength.png
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/Weighted_LogTransformed_HistogramReadlength.png
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/alignment_stats.yaml
+ create mode 100644 Escherichia_coli_115049956982737/readset_analysis/all_reads_alignment.paf
+ create mode 100644 Escherichia_coli_115049956982737/std_logs/.nfs0000000006413aab003fb648
+ create mode 100644 Escherichia_coli_115049956982737/std_logs/.nfs0000000006414f41003fb64b
+ create mode 100644 Escherichia_coli_115049956982737/std_logs/git.log
+ create mode 100644 Escherichia_coli_115049956982737/std_logs/multiqc.log
+ create mode 100644 Escherichia_coli_115049956982737/std_logs/quast.log
+To git@github.com:lanno001/assembler_benchmark_new_submissions
+   0815a3f..b0efcd8  master -> master
+{
+  "message": "Validation Failed",
+  "errors": [
+    {
+      "resource": "PullRequest",
+      "code": "custom",
+      "message": "A pull request already exists for lanno001:master."
+    }
+  ],
+  "documentation_url": "https://developer.github.com/v3/pulls/#create-a-pull-request"
+}
