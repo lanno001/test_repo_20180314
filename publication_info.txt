@@ -1,5 +1,5 @@
-authors="Carlos"
-organism="E. coli"
+authors="Carlos de Lannoy"
+organism="Escherichia coli"
 basecaller="Albacore 2.0.2"
 kit="SQK-LSK108"
 flowcell="FLO-MIN105"

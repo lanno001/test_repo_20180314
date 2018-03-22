@@ -3,7 +3,7 @@
 [INFO   ]         multiqc : Report title: Assembler Benchmark report
 [INFO   ]         multiqc : Searching '/mnt/nexenta/lanno001/nobackup/int_ab_20180321/summarized_results'
 [INFO   ]         multiqc : Only using modules with 'assembler_benchmark' tag
-Searching 105 files..
+Searching 180 files..
 [INFO   ] ab_read_quality : found Minimap2 alignment summary
 [INFO   ] ab_read_quality : found nanostats file
 [INFO   ]           quast : Found 2 reports
