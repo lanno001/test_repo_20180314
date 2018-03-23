@@ -1,16 +1,20 @@
-[2018-03-23_02:17:35]: PUSH TO GITHUB REPOSITORY
-[master c3ed668] Automatic benchmark results commit
- 12 files changed, 15680 insertions(+), 32 deletions(-)
- create mode 100644 README_data/mqc_quast_num_contigs_1.txt
- create mode 100644 README_data/multiqc.log
- create mode 100644 README_data/multiqc_data.json
- create mode 100644 README_data/multiqc_general_stats.txt
- create mode 100644 README_data/multiqc_quast.txt
- create mode 100644 README_data/multiqc_readqual_summary.txt
- create mode 100644 README_data/multiqc_sources.txt
+[2018-03-23_02:46:04]: PUSH TO GITHUB REPOSITORY
+[master 806ab38] Automatic benchmark results commit
+ 18 files changed, 18070 insertions(+), 15663 deletions(-)
+ rewrite README_data/multiqc.log (64%)
+ rewrite README_data/multiqc_data.json (62%)
+ rewrite README_data/multiqc_quast.txt (100%)
+ create mode 100644 multiqc_plots/pdf/mqc_quast_num_contigs_1.pdf
+ create mode 100644 multiqc_plots/pdf/mqc_quast_num_contigs_1_pc.pdf
+ create mode 100644 multiqc_plots/png/mqc_jellyfish_kmer_scatterplot.png
+ create mode 100644 multiqc_plots/png/mqc_mummerplot.png
+ create mode 100644 multiqc_plots/png/mqc_quast_num_contigs_1.png
+ create mode 100644 multiqc_plots/png/mqc_quast_num_contigs_1_pc.png
+ create mode 100644 multiqc_plots/svg/mqc_quast_num_contigs_1.svg
+ create mode 100644 multiqc_plots/svg/mqc_quast_num_contigs_1_pc.svg
 From github.com:lanno001/test_repo_20180314
  * branch            master     -> FETCH_HEAD
 Already up-to-date.
 To git@github.com:lanno001/test_repo_20180314.git
-   9baf251..c3ed668  master -> master
+   8b141f5..806ab38  master -> master
 Branch master set up to track remote branch master from origin.

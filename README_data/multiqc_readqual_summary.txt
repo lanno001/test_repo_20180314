@@ -1,3 +1,3 @@
-Sample	Mean read quality	Median read length	Median read quality	Mean read length
+Sample	Mean read length	Median read quality	Mean read quality	Median read length
 minimap2				
-nanostats	10.8	20763.0	11.2	34946.1
+nanostats	34946.1	11.2	10.8	20763.0

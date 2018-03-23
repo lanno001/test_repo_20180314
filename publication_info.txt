@@ -1,6 +1,6 @@
-authors="fsd"
-organism="sdfa"
-basecaller="adsf"
+authors="asdf"
+organism="asfd"
+basecaller="fsda"
 kit="SQK-LSK108"
 flowcell="FLO-MIN105"
 repository_name=git@github.com:lanno001/test_repo_20180314.git

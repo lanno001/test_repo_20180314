@@ -3,7 +3,7 @@
 [INFO   ]         multiqc : Report title: Assembler Benchmark report
 [INFO   ]         multiqc : Searching '/mnt/nexenta/lanno001/nobackup/int_ab_20180321/summarized_results'
 [INFO   ]         multiqc : Only using modules with 'assembler_benchmark' tag
-Searching 88 files..
+Searching 104 files..
 [INFO   ] ab_read_quality : found Minimap2 alignment summary
 [INFO   ] ab_read_quality : found nanostats file
 [INFO   ]           quast : Found 2 reports
@@ -12,6 +12,34 @@ Searching 88 files..
 [INFO   ]      mummerplot : found mummerplot images
 [INFO   ]    ab_cpu_times : found 2 CPU time entries
 [INFO   ]         multiqc : Compressing plot data
+[WARNING]         multiqc : Deleting    : summarized_results/README_data   (-f was specified)
 [INFO   ]         multiqc : Report      : summarized_results/README.html
 [INFO   ]         multiqc : Data        : summarized_results/README_data
-[INFO   ]         multiqc : MultiQC complete
+[WARNING]         multiqc : Deleting    : summarized_results/multiqc_plots   (-f was specified)
+[INFO   ]         multiqc : Plots       : summarized_results/multiqc_plots
+Traceback (most recent call last):
+  File "/home/lanno001/.local/bin/multiqc", line 6, in <module>
+    exec(compile(open(__file__).read(), __file__, 'exec'))
+  File "/home/lanno001/bin/nobackup/MultiQC/scripts/multiqc", line 752, in <module>
+    multiqc()
+  File "/home/lanno001/.local/lib/python3.5/site-packages/click/core.py", line 722, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/lanno001/.local/lib/python3.5/site-packages/click/core.py", line 697, in main
+    rv = self.invoke(ctx)
+  File "/home/lanno001/.local/lib/python3.5/site-packages/click/core.py", line 895, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/lanno001/.local/lib/python3.5/site-packages/click/core.py", line 535, in invoke
+    return callback(*args, **kwargs)
+  File "/home/lanno001/bin/nobackup/MultiQC/scripts/multiqc", line 655, in multiqc
+    report_output = j_template.render(report=report, config=config)
+  File "/home/lanno001/.local/lib/python3.5/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/lanno001/.local/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lanno001/.local/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/tmp/tmptk5iod49/base.html", line 33, in top-level template code
+    {% include 'methods.html' %}
+  File "/tmp/tmptk5iod49/methods.html", line 27, in top-level template code
+    {{ print(report.modules_output[0].sections[0]['content']['readset_quality']) }}
+jinja2.exceptions.UndefinedError: 'print' is undefined
