@@ -1,0 +1,6 @@
+Module	Section	Sample Name	Source
+Jellyfish	all_sections	minimap2_miniasm.count	/mnt/nexenta/lanno001/nobackup/int_ab_20180321/summarized_results/kmer_abundance/count_files/minimap2_miniasm.count
+Jellyfish	all_sections	minimap_miniasm.count	/mnt/nexenta/lanno001/nobackup/int_ab_20180321/summarized_results/kmer_abundance/count_files/minimap_miniasm.count
+Jellyfish	all_sections	ecoli_k12_mg1655.count	/mnt/nexenta/lanno001/nobackup/int_ab_20180321/summarized_results/kmer_abundance/count_files/ecoli_k12_mg1655.count
+QUAST	all_sections	minimap2_miniasm	/mnt/nexenta/lanno001/nobackup/int_ab_20180321/summarized_results/quast/report.tsv
+QUAST	all_sections	minimap_miniasm	/mnt/nexenta/lanno001/nobackup/int_ab_20180321/summarized_results/quast/report.tsv

@@ -1,0 +1,6 @@
+authors="lkj"
+organism="ghhgl"
+basecaller="giygoy"
+kit="SQK-LSK108"
+flowcell="FLO-MIN105"
+repository_name=git@github.com:lanno001/test_repo_20180314.git
