@@ -1,0 +1,3 @@
+Sample	>= 50000 bp
+minimap2_miniasm	9.0
+minimap_miniasm	9.0
