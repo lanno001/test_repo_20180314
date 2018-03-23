@@ -1,10 +1,16 @@
-[2018-03-23_02:05:12]: PUSH TO GITHUB REPOSITORY
-[master df6b461] Automatic benchmark results commit
- 4 files changed, 145 insertions(+), 260 deletions(-)
- rewrite std_logs/git.log (98%)
+[2018-03-23_02:17:35]: PUSH TO GITHUB REPOSITORY
+[master c3ed668] Automatic benchmark results commit
+ 12 files changed, 15680 insertions(+), 32 deletions(-)
+ create mode 100644 README_data/mqc_quast_num_contigs_1.txt
+ create mode 100644 README_data/multiqc.log
+ create mode 100644 README_data/multiqc_data.json
+ create mode 100644 README_data/multiqc_general_stats.txt
+ create mode 100644 README_data/multiqc_quast.txt
+ create mode 100644 README_data/multiqc_readqual_summary.txt
+ create mode 100644 README_data/multiqc_sources.txt
 From github.com:lanno001/test_repo_20180314
  * branch            master     -> FETCH_HEAD
 Already up-to-date.
 To git@github.com:lanno001/test_repo_20180314.git
-   fa81ac2..df6b461  master -> master
+   9baf251..c3ed668  master -> master
 Branch master set up to track remote branch master from origin.
