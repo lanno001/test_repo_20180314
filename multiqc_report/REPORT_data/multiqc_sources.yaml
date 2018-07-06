@@ -1,0 +1,7 @@
+Jellyfish:
+  all_sections:
+    minimap2_miniasm.count: /home/carlos/local_data/poreTally_pytest/analysis/summary/jellyfish/minimap2_miniasm.count
+    reference.count: /home/carlos/local_data/poreTally_pytest/analysis/summary/jellyfish/reference.count
+QUAST:
+  all_sections:
+    minimap2_miniasm: /home/carlos/local_data/poreTally_pytest/analysis/summary/quast/report.tsv

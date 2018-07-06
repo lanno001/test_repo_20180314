@@ -1,0 +1,9 @@
+START METHODS PRINTING
+description: Minimap2 is a fast all-vs-all mapper of reads that relies on sketches of sequences, composed of minimizers. Miniasm uses the found overlaps to construct an assembly graph. As a consensus step is lacking in this pipeline, post-assembly polishing is often required.
+versions:
+  minimap2: 2.10-r761
+  miniasm: 0.2-r128
+END METHODS PRINTING
+
+
+

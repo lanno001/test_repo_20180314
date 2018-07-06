@@ -1,0 +1,31 @@
+minimap2_miniasm:
+  '# N''s per 100 kbp': 0.0
+  '# contigs': 1.0
+  '# contigs (>= 0 bp)': 1.0
+  '# contigs (>= 1000 bp)': 1.0
+  '# contigs (>= 10000 bp)': 1.0
+  '# contigs (>= 25000 bp)': 1.0
+  '# contigs (>= 5000 bp)': 1.0
+  '# contigs (>= 50000 bp)': 0.0
+  '# unaligned contigs': 1.0
+  '# unaligned contigs_partial': 0.0
+  L50: 1.0
+  L75: 1.0
+  LG50: 1.0
+  LG75: 1.0
+  Largest contig: 40947.0
+  N50: 40947.0
+  N75: 40947.0
+  NG50: 40947.0
+  NG75: 40947.0
+  NGA50: '-'
+  Reference GC (%): 55.97
+  Reference length: 12470.0
+  Total length: 40947.0
+  Total length (>= 0 bp): 40947.0
+  Total length (>= 1000 bp): 40947.0
+  Total length (>= 10000 bp): 40947.0
+  Total length (>= 25000 bp): 40947.0
+  Total length (>= 5000 bp): 40947.0
+  Total length (>= 50000 bp): 0.0
+  Unaligned length: 40947.0

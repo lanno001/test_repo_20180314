@@ -1,0 +1,5 @@
+minimap2_miniasm:
+  CPU usage_mqc-generalstats-CPU_time: 0:00:00
+  CPU usage_mqc-generalstats-mean_CPU_load_MB: 0.0
+  QUAST_mqc-generalstats-N50: 40947.0
+  QUAST_mqc-generalstats-Total_length: 40947.0
