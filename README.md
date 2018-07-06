@@ -7,10 +7,10 @@ miniasm -f {input.fastq} minimap2.paf.gz > minimap2_miniasm.gfa
 grep -Po '(?<=S\t).+(?=\[M::main\])' minimap2_miniasm.gfa | awk '{{print ">"$1"\\n"$2}}' | fold > {output}
 </code></pre><h3>Assembly quality assessment</h3>Produced assemblies were analyzed and compared on continuity and agreement with the reference genome. Quast (version: 4.6.3) was used to determine a wide array of quality metrics in both quality categories and produce synteny plots. To elucidate any bias in the occurence of certain sequences, 5-mers in the assemblies and the reference genomes were compared using Jellyfish (version: 2.2.6). Finally, results were summarized using MultiQC.<h2>Results</h2><h3>General Statistics</h3><table>
 <thead>
-<tr><th style="text-align: center;">                </th><th style="text-align: center;"> Total length </th><th style="text-align: center;"> N50 </th><th style="text-align: center;"> mean CPU load MB </th><th style="text-align: center;"> CPU time </th></tr>
+<tr><th style="text-align: center;">                </th><th style="text-align: center;"> Total length </th><th style="text-align: center;"> N50 </th><th style="text-align: center;"> CPU time </th><th style="text-align: center;"> mean CPU load MB </th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: center;">minimap2_miniasm</td><td style="text-align: center;">    40947     </td><td style="text-align: center;">40947</td><td style="text-align: center;">        0         </td><td style="text-align: center;"> 0:00:00  </td></tr>
+<tr><td style="text-align: center;">minimap2_miniasm</td><td style="text-align: center;">    40947     </td><td style="text-align: center;">40947</td><td style="text-align: center;"> 0:00:00  </td><td style="text-align: center;">        0         </td></tr>
 </tbody>
 </table><h3>Readset quality</h3>
 <table>
@@ -18,17 +18,17 @@ grep -Po '(?<=S\t).+(?=\[M::main\])' minimap2_miniasm.gfa | awk '{{print ">"$1"\
 <tr><th style="text-align: center;">                          </th><th style="text-align: center;"> Value </th><th style="text-align: center;">                 </th><th style="text-align: center;">  N   </th><th style="text-align: center;">  %  </th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: center;"><b>Median read length</b> </td><td style="text-align: center;"> 14488 </td><td style="text-align: center;"><b>insertions</b></td><td style="text-align: center;"> 8100 </td><td style="text-align: center;">4.08 </td></tr>
-<tr><td style="text-align: center;"> <b>Mean read length</b>  </td><td style="text-align: center;">15401.7</td><td style="text-align: center;"><b>deletions</b> </td><td style="text-align: center;">11982 </td><td style="text-align: center;">6.03 </td></tr>
+<tr><td style="text-align: center;"> <b>Mean read length</b>  </td><td style="text-align: center;">15401.7</td><td style="text-align: center;"><b>insertions</b></td><td style="text-align: center;"> 8100 </td><td style="text-align: center;">4.08 </td></tr>
+<tr><td style="text-align: center;"><b>Median read quality</b></td><td style="text-align: center;">  9.4  </td><td style="text-align: center;"><b>deletions</b> </td><td style="text-align: center;">11982 </td><td style="text-align: center;">6.03 </td></tr>
+<tr><td style="text-align: center;"><b>Median read length</b> </td><td style="text-align: center;"> 14488 </td><td style="text-align: center;"><b>mismatches</b></td><td style="text-align: center;">10580 </td><td style="text-align: center;">5.33 </td></tr>
 <tr><td style="text-align: center;"> <b>Mean read quality</b> </td><td style="text-align: center;">  9.1  </td><td style="text-align: center;"> <b>matches</b>  </td><td style="text-align: center;">167884</td><td style="text-align: center;">84.56</td></tr>
-<tr><td style="text-align: center;"><b>Median read quality</b></td><td style="text-align: center;">  9.4  </td><td style="text-align: center;"><b>mismatches</b></td><td style="text-align: center;">10580 </td><td style="text-align: center;">5.33 </td></tr>
 </tbody>
 </table><h3>QUAST</h3><h4>Assembly Statistics</h4><table>
 <thead>
-<tr><th style="text-align: center;">                </th><th style="text-align: center;"> Largest contig (Kbp) </th><th style="text-align: center;"> Length (Mbp) </th><th style="text-align: center;"> N50 (Kbp) </th><th style="text-align: center;"> N75 (Kbp) </th><th style="text-align: center;"> L75 (K) </th><th style="text-align: center;"> L50 (K) </th></tr>
+<tr><th style="text-align: center;">                </th><th style="text-align: center;"> L75 (K) </th><th style="text-align: center;"> L50 (K) </th><th style="text-align: center;"> N50 (Kbp) </th><th style="text-align: center;"> Largest contig (Kbp) </th><th style="text-align: center;"> N75 (Kbp) </th><th style="text-align: center;"> Length (Mbp) </th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: center;">minimap2_miniasm</td><td style="text-align: center;">        40947         </td><td style="text-align: center;">    40947     </td><td style="text-align: center;">   40947   </td><td style="text-align: center;">   40947   </td><td style="text-align: center;">    1    </td><td style="text-align: center;">    1    </td></tr>
+<tr><td style="text-align: center;">minimap2_miniasm</td><td style="text-align: center;">    1    </td><td style="text-align: center;">    1    </td><td style="text-align: center;">   40947   </td><td style="text-align: center;">        40947         </td><td style="text-align: center;">   40947   </td><td style="text-align: center;">    40947     </td></tr>
 </tbody>
 </table><h4>Number of Contigs</h4>
 
